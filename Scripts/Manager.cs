@@ -19,7 +19,7 @@ public class Manager : MonoBehaviour
 
     private void Update()
     {
-        // ¿ªÆôproSaccade¼ì²â
+        // å¼€å¯prosaccadeæ£€æµ‹
         if(Input.GetKeyDown(KeyCode.N))
         {
             proSaccadeDetection.startProSaccade();
@@ -27,7 +27,7 @@ public class Manager : MonoBehaviour
         }
         else
         {
-            // ½áÊøproSaccade¼ì²â
+            // ç»“æŸprosaccadeæ£€æµ‹
             if (Input.GetKeyDown(KeyCode.M))
             {
                 proSaccadeDetection.isSpawning = true;
@@ -36,15 +36,15 @@ public class Manager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.J))
         {
-            // ¿ªÆôÎÊÌâÃæ°å
+            // é—®é¢˜çª—å£å¼¹å‡º
             StartCoroutine(panelanimator.ShowPanel());
         }
         if(Input.GetKeyDown (KeyCode.S))
         {
-            // Òş²ØÎÊÌâÃæ°å
+            // é—®é¢˜çª—å£å…³é—­
             StartCoroutine (panelanimator.HidePanel());
         }
-        // ¿ªÆôantiSaccade¼ì²â
+        // å¼€å¯antisaccadeæ£€æµ‹
         if (Input.GetKeyDown(KeyCode.Q))
         {
             antiSaccadeDetection.startAntiSaccade();
@@ -52,7 +52,7 @@ public class Manager : MonoBehaviour
         }
         else
         {
-            // ½áÊøantisaccade¼ì²â
+            // å…³é—­antisaccadeæ£€æµ‹
             if (Input.GetKeyDown(KeyCode.W))
             {
                 antiSaccadeDetection.isFinish = true;
