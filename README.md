@@ -1,4 +1,4 @@
-# Introdutiocn  
+# Introduction
 ## Contains  
   ·Data  
   ·Scripts
